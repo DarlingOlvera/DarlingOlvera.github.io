@@ -1,0 +1,48 @@
+ /*Imagenes*/
+ .imagenes{
+    height: auto;
+    width: auto;
+    max-width: 3264px;
+    max-height: 2448px;
+}
+
+/*Botones*/
+.boton{
+    border-radius: 25px;
+    background-color: #2C3E50;
+    border:none;
+    color: #D4AC0D;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 3px solid #D4AC0D;
+
+}
+/*contenedores botones*/
+.abajo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10px;
+    z-index: 1;
+}
+
+
+.oculto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    width: 100%;
+    z-index: 1;
+}
+
+.oculto button{
+    display: none;
+}
+
