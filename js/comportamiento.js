@@ -28,45 +28,56 @@
   //funcion cambio de imagenes
   function fotos(){
         cont++;
-        if (bl==0){
-            switch(cont % 4+1){
-                case 1:
-                    plano.setAttribute('src','#en1');
-                    plano2.setAttribute('src','#cc1');
-                    plano3.setAttribute('src','#cub2');
-                    plano4.setAttribute('src','#bib2');
-                    plano5.setAttribute('src','#caf2');
-                break;
-                case 2:
-                    plano.setAttribute('src','#en2');
-                    plano2.setAttribute('src','#cc2');
-                    plano3.setAttribute('src','#cub1');
-                    plano4.setAttribute('src','#bib3');
-                    plano5.setAttribute('src','#caf3');
-                break;
-                case 3:
-                    plano.setAttribute('src','#en3');
-                    plano2.setAttribute('src','#cc3');
-                    plano3.setAttribute('src','#cub2');
-                    plano4.setAttribute('src','#bib1');
-                    plano5.setAttribute('src','#caf1');
-                break;
-                case 4:
-                    plano.setAttribute('src','#en4');
-                    plano2.setAttribute('src','#cc4');
-                    plano3.setAttribute('src','#cub1');
-                    plano4.setAttribute('src','#bib2');
-                    plano5.setAttribute('src','#caf2');
-                break;
-            } 
+        switch (bl){
+            case 0:
+                switch(cont % 4+1){
+                    case 1:
+                        plano.setAttribute('src','#en1');
+                        plano2.setAttribute('src','#cc1');
+                        plano3.setAttribute('src','#cub2');
+                        plano4.setAttribute('src','#bib2');
+                        plano5.setAttribute('src','#caf2');
+                    break;
+                    case 2:
+                        plano.setAttribute('src','#en2');
+                        plano2.setAttribute('src','#cc2');
+                        plano3.setAttribute('src','#cub1');
+                        plano4.setAttribute('src','#bib3');
+                        plano5.setAttribute('src','#caf3');
+                    break;
+                    case 3:
+                        plano.setAttribute('src','#en3');
+                        plano2.setAttribute('src','#cc3');
+                        plano3.setAttribute('src','#cub2');
+                        plano4.setAttribute('src','#bib1');
+                        plano5.setAttribute('src','#caf1');
+                    break;
+                    case 4:
+                        plano.setAttribute('src','#en4');
+                        plano2.setAttribute('src','#cc4');
+                        plano3.setAttribute('src','#cub1');
+                        plano4.setAttribute('src','#bib2');
+                        plano5.setAttribute('src','#caf2');
+                    break;
+                } 
+            break;
+            case 1:
+                plano.setAttribute('src','#MEN');
+                plano2.setAttribute('src','#MCC');
+                plano3.setAttribute('src','#ME');
+                plano4.setAttribute('src','#MB');
+                plano5.setAttribute('src','#MF');
+            break;
+            case 2:
+                plano.setAttribute('src','#infoEn');
+                plano2.setAttribute('src','#infoCe');
+                plano3.setAttribute('src','#infoDo');
+                plano4.setAttribute('src','#infoBi');
+                plano5.setAttribute('src','#infoCa');
+            break;
+
         }
-    else{
-        plano.setAttribute('src','#MEN');
-        plano2.setAttribute('src','#MCC');
-        plano3.setAttribute('src','#ME');
-        plano4.setAttribute('src','#MB');
-        plano5.setAttribute('src','#MF');
-    }
+    
   }
 
   //funcion de intervalo entre cambio de imagen
@@ -92,6 +103,29 @@
   //boton información
   document.getElementById("info").addEventListener('click', (e)=>{
       alert('oprimió información');
+      //Entrada
+      texto1.setAttribute('text-geometry','value','Informacion');
+      texto1.setAttribute('material','color','#FFC300');
+
+      //Computo
+      texto2.setAttribute('text-geometry','value','Informacion');
+      texto2.setAttribute('material','color','#FFC300');
+
+      //Docencia
+      texto3.setAttribute('text-geometry','value','Informacion');
+      texto3.setAttribute('material','color','#FFC300');
+
+      //Biblioteca
+      texto4.setAttribute('text-geometry','value','Informacion');
+      texto4.setAttribute('material','color','#FFC300');
+      
+      //Cafteria
+      texto5.setAttribute('text-geometry','value','Informacion');
+      texto5.setAttribute('material','color','#FFC300');
+
+      document.getElementById("cerrar").style.display= 'block';
+
+      bl = 2;
   });
 
   //boton croquis
