@@ -153,13 +153,13 @@
       //Biblioteca
       texto4.setAttribute('text-geometry','value','Ubicacion actual');
       texto4.setAttribute('material','color','#A3060F');
-      texto4.setAttribute('position','-4.6 0.5 -3');
+      texto4.setAttribute('position','-3.8 0.5 -3');
       
       
       //Cafteria
       texto5.setAttribute('text-geometry','value','Ubicacion actual');
       texto5.setAttribute('material','color','#A3060F');
-      texto5.setAttribute('position','-4.6 0.5 -3');
+      texto5.setAttribute('position','-3.8 0.5 -3');
       
 
       document.getElementById("cerrar").style.display= 'block';
@@ -176,24 +176,28 @@
       //plano.setAttribute('src','#en1');    
       texto1.setAttribute('text-geometry','value','Entrada Principal');
       texto1.setAttribute('material','color','#D4AC0D');
+      texto1.setAttribute('position','-3.8 0.5 -3');
 
       //Computo
       //plano2.setAttribute('src','#cc1');    
       texto2.setAttribute('text-geometry','value','Centro de computo');
       texto2.setAttribute('material','color','#D4AC0D');
+      texto2.setAttribute('position','-4.6 0.5 -3');
 
       //Docencia
       //plano3.setAttribute('src','#cc1');    
       texto3.setAttribute('text-geometry','value','Edificio de Docencia');
       texto3.setAttribute('material','color','#D4AC0D');
-      
+      texto3.setAttribute('position','-4.6 0.5 -3');
       //Biblioteca
       texto4.setAttribute('text-geometry','value','Biblioteca');
       texto4.setAttribute('material','color','#D4AC0D');
+      texto4.setAttribute('position','-2.6 0.5 -3');
 
       //Cafeteria
       texto5.setAttribute('text-geometry','value','Cafeteria');
       texto5.setAttribute('material','color','#D4AC0D');
+      texto5.setAttribute('position','-2.6 0.5 -3');
       //m.addEventListener('markerFound',inicio);
       bl=0;
       document.getElementById("cerrar").style.display= 'none';
