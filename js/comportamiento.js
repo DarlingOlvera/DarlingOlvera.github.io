@@ -102,18 +102,21 @@
   
   //boton información
   document.getElementById("info").addEventListener('click', (e)=>{
-      alert('oprimió información');
+      //alert('oprimió información');
       //Entrada
       texto1.setAttribute('text-geometry','value','Informacion');
       texto1.setAttribute('material','color','#FFC300');
+      texto1.setAttribute('position','-2.6 0.5 -3');
 
       //Computo
       texto2.setAttribute('text-geometry','value','Informacion');
       texto2.setAttribute('material','color','#FFC300');
+      texto2.setAttribute('position','-2.6 0.5 -3');
 
       //Docencia
       texto3.setAttribute('text-geometry','value','Informacion');
       texto3.setAttribute('material','color','#FFC300');
+      texto1.setAttribute('position','-2.6 0.5 -3');
 
       //Biblioteca
       texto4.setAttribute('text-geometry','value','Informacion');
@@ -135,27 +138,29 @@
      //Entrada
       texto1.setAttribute('text-geometry','value','Ubicacion actual');
       texto1.setAttribute('material','color','#A3060F');
-      //plano.setAttribute('src','#MEN');
+      
 
       //Computo
       texto2.setAttribute('text-geometry','value','Ubicacion actual');
       texto2.setAttribute('material','color','#A3060F');
-      //plano.setAttribute('src','#MCC');
+      
 
       //Docencia
       texto3.setAttribute('text-geometry','value','Ubicacion actual');
       texto3.setAttribute('material','color','#A3060F');
-      //plano.setAttribute('src','#ME');
+      
 
       //Biblioteca
       texto4.setAttribute('text-geometry','value','Ubicacion actual');
       texto4.setAttribute('material','color','#A3060F');
-      //plano.setAttribute('src','#MB');
+      texto4.setAttribute('position','-4.6 0.5 -3');
+      
       
       //Cafteria
       texto5.setAttribute('text-geometry','value','Ubicacion actual');
       texto5.setAttribute('material','color','#A3060F');
-      //plano.setAttribute('src','#MF');
+      texto5.setAttribute('position','-4.6 0.5 -3');
+      
 
       document.getElementById("cerrar").style.display= 'block';
 
